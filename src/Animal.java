@@ -28,6 +28,7 @@ public class Animal {
     // toString method
     @Override
     public String toString() {
-        return "Animal{name='" + name + "', habitat='" + habitat + "'}";
+        //return "Animal{name='" + name + "', habitat='" + habitat + "'}";
+        return "The " + getName() + " lives in a " + getHabitat() + " habitat. ";
     }
 }

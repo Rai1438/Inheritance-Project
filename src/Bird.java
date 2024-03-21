@@ -1,20 +1,20 @@
 public class Bird extends Animal {
-    private double wingspan;
+    private String wingspan;
     private boolean canFly;
 
     // Constructor
-    public Bird(String name, String habitat, double wingspan, boolean canFly) {
+    public Bird(String name, String habitat, String wingspan, boolean canFly) {
         super(name, habitat);
         this.wingspan = wingspan;
         this.canFly = canFly;
     }
 
     // Getters and setters
-    public double getWingspan() {
+    public String getWingspan() {
         return wingspan;
     }
 
-    public void setWingspan(double wingspan) {
+    public void setWingspan(String wingspan) {
         this.wingspan = wingspan;
     }
 
@@ -29,7 +29,8 @@ public class Bird extends Animal {
     // toString method
     @Override
     public String toString() {
-        return "Bird{name='" + getName() + "', habitat='" + getHabitat() + "', wingspan=" + wingspan + ", canFly=" + canFly + '}';
+        //return "Bird{name='" + getName() + "', habitat='" + getHabitat() + "', wingspan=" + wingspan + ", canFly=" + canFly + '}';
+        return "The " + getName() + " lives in a " + getHabitat() + " habitat. It has a wingspan of " + getWingspan() + " ft. It is " + isCanFly() + " that it can fly.";
     }
 }
 
