@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class AnimalTester {
     public static void main(String[] args) {
-        // Create an ArrayList to hold references to Animal objects
+
         ArrayList<Animal> animals = new ArrayList<>();
 
         // Add instances of various animal subclasses to the ArrayList
@@ -12,8 +12,10 @@ public class AnimalTester {
         animals.add(new Eagle("Eagle", "Mountains", "5.9 - 7.5", true, true));
         animals.add(new FreshwaterFish("Trout", "River", "Freshwater", true, 10));
         animals.add(new SaltwaterFish("Shark", "Ocean", "Saltwater", true));
+        animals.add(new Lizard("Gila Monster", "Desserts and canyons", true, true));
+        animals.add(new Turtle("Sea Turtle", "Oceans", false, true));
 
-        // Iterate through the ArrayList and demonstrate inheritance
+
         for (Animal animal : animals) {
             System.out.println(animal);
             // Call a method specific to the subclass
@@ -27,7 +29,12 @@ public class AnimalTester {
                 ((Eagle) animal).flyHigh();
             } else if (animal instanceof Fish) {
                 ((Fish) animal).swim();
+            } else if (animal instanceof Lizard) {
+                ((Lizard) animal).hiss();
+                //} else if (animal instanceof Turtle) {
+                //((Turtle) animal).
             }
+
             System.out.println();
         }
     }

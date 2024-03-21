@@ -16,8 +16,6 @@ public class FreshwaterFish extends Fish {
         this.preferredTemperature = preferredTemperature;
     }
 
-    // Additional methods specific to FreshwaterFish behavior can be added here
-
     // toString method
     @Override
     public String toString() {

@@ -16,8 +16,4 @@ public class SaltwaterFish extends Fish {
         this.habitat = habitat;
     }
 
-    // Additional methods specific to SaltwaterFish behavior can be added here
-
-    // toString method
-
 }

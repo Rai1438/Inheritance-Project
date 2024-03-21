@@ -26,7 +26,6 @@ public class Fish extends Animal {
         this.canBreatheUnderwater = canBreatheUnderwater;
     }
 
-    // Fish class
     public void swim() {
         System.out.println("The " + getName() + " swims gracefully in the water.");
     }

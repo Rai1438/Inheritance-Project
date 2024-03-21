@@ -16,8 +16,6 @@ public class Canine extends Mammal {
         this.breed = breed;
     }
 
-    // Additional methods specific to Canine behavior can be added here
-
     public void bark() {
         System.out.println("Woof! Woof!");
     }
